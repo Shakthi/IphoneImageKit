@@ -69,7 +69,6 @@ function main()
     var LSets = activeDocument.layerSets.length;
     var ArtLayers = activeDocument.artLayers.length;
     var NoOfLayers = activeDocument.layers.length;
-    var Back = hasBackground();
     var hasTop = false;
     var selLayers =getSelectedLayersIdx();
     var selGroups=[];
@@ -503,16 +502,7 @@ function main()
 	
 }
 
-function hasBackground()
-{
-    var ref = new ActionReference();
-    ref.putProperty( charIDToTypeID("Prpr"), charIDToTypeID( "Bckg" ));
-    ref.putEnumerated(charIDToTypeID( "Lyr " ),charIDToTypeID( "Ordn" ),charIDToTypeID( "Back" ));
-    var desc =  executeActionGet(ref);
-    var res = desc.getBoolean(charIDToTypeID( "Bckg" ));
-    return res
-}
-       function getSelectedLayersIdx()
+function getSelectedLayersIdx()
 {
     var selectedLayers = new Array;
     var ref = new ActionReference();
