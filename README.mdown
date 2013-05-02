@@ -1,6 +1,6 @@
 ExportToPNGHD
 -------------
-Based on the code posted on the forum  http://forums.adobe.com/message/3442865 by Paul Riggott
+Based on the code posted on the forum  http://forums.adobe.com/message/3442865 by Paul Riggott.
 Now it can be said as stripped down version of 'Layer saver' script found at http://www.scriptsrus.talktalk.net
 
 
